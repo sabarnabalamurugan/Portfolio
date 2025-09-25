@@ -48,7 +48,7 @@ function Navbar() {
           <li><a href="#skills" className="hover:text-[#67C090] transition">Skills</a></li>
           <li><a href="#projects" className="hover:text-[#67C090] transition">Projects</a></li>
           <li><a href="#contact" className="hover:text-[#67C090] transition">Contact</a></li>
-          <li><a href="/Sabarna_Resume.pdf" download className="hover:text-[#67C090] transition">Resume</a></li>
+          <li><a href="/Sabarna_Resume.pdf" download="Sabarna_Resume.pdf" className="hover:text-[#67C090] transition">Resume</a></li>
         </ul>
       </div>
 
