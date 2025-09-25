@@ -48,6 +48,7 @@ function Navbar() {
           <li><a href="#skills" className="hover:text-[#67C090] transition">Skills</a></li>
           <li><a href="#projects" className="hover:text-[#67C090] transition">Projects</a></li>
           <li><a href="#contact" className="hover:text-[#67C090] transition">Contact</a></li>
+          <li><a href="/Sabarna_Resume.pdf" download className="hover:text-[#67C090] transition">Resume</a></li>
         </ul>
       </div>
 
@@ -59,6 +60,7 @@ function Navbar() {
           <li><a href="#skills" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Skills</a></li>
           <li><a href="#projects" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Projects</a></li>
           <li><a href="#contact" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Contact</a></li>
+          <li><a href="/Sabarna_Resume.pdf" download className="block px-4 py-2 hover:bg-[#26667F] rounded">Resume</a></li>
         </ul>
       )}
     </nav>
