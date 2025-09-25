@@ -3,6 +3,10 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu after clicking
+  };
+
   return (
     <nav className="bg-[#124170] text-[#DDF4E7] px-6 py-4 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -50,11 +54,11 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden mt-4 space-y-2 text-sm font-medium">
-          <li><a href="#about" className="block px-4 py-2 hover:bg-[#26667F] rounded">About</a></li>
-          <li><a href="#education" className="block px-4 py-2 hover:bg-[#26667F] rounded">Education</a></li>
-          <li><a href="#skills" className="block px-4 py-2 hover:bg-[#26667F] rounded">Skills</a></li>
-          <li><a href="#projects" className="block px-4 py-2 hover:bg-[#26667F] rounded">Projects</a></li>
-          <li><a href="#contact" className="block px-4 py-2 hover:bg-[#26667F] rounded">Contact</a></li>
+          <li><a href="#about" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">About</a></li>
+          <li><a href="#education" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Education</a></li>
+          <li><a href="#skills" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Skills</a></li>
+          <li><a href="#projects" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Projects</a></li>
+          <li><a href="#contact" onClick={handleLinkClick} className="block px-4 py-2 hover:bg-[#26667F] rounded">Contact</a></li>
         </ul>
       )}
     </nav>
